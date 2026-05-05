@@ -12,11 +12,11 @@
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Start</a></li>
     <li><a href="judo.html">Judo</a></li>
     <li><a href="jiujitsu.html">Jiu-Jitsu</a></li>
     <li><a href="trainer.html">Trainer</a></li>
     <li><a href="vorstand.html">Vorstand</a></li>
-    <li><a href="neuigkeiten.html">Neuigkeiten</a></li>
     <li><a href="galerie.html">Galerie</a></li>
     <li><a href="kontakt.html">Kontakt</a></li>
     <li class="nav-cta"><a href="mitglieder.html">Mitglieder</a></li>
