@@ -19,7 +19,6 @@
     <li><a href="vorstand.html">Vorstand</a></li>
     <li><a href="galerie.html">Galerie</a></li>
     <li><a href="kontakt.html">Kontakt</a></li>
-    <li class="nav-cta"><a href="mitglieder.html">Mitglieder</a></li>
   </ul>
 </nav>`;
 
@@ -57,7 +56,6 @@
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
-        <li><a href="mitglieder.html">Mitgliederbereich</a></li>
       </ul>
     </div>
   </div>
