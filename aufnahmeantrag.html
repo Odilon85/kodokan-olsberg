@@ -179,8 +179,8 @@
     </div>
 
     <p class="text-muted mt-2" style="font-size:.82rem;text-align:center">
-      Nach dem Absenden erhältst du eine Bestätigung per E-Mail. Die Mitgliedschaft wird nach Prüfung durch den Vorstand bestätigt.<br>
-      Den aktuellen Mitgliedsbeitrag erfährst du auf Anfrage beim <a href="kontakt.html">Vorstand</a>.
+      Das Formular öffnet dein E-Mail-Programm mit allen Angaben vorausgefüllt. Bitte die E-Mail anschließend absenden.<br>
+      Die Mitgliedschaft wird nach Prüfung durch den Vorstand bestätigt.
     </p>
 
   </div>
@@ -189,5 +189,46 @@
 <div id="footer-root"></div>
 <script src="js/nav.js"></script>
 <script src="js/main.js"></script>
+<script>
+document.getElementById('appForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const body =
+    'AUFNAHMEANTRAG – Kodokan Olsberg e.V.\n' +
+    '=====================================\n\n' +
+    'PERSÖNLICHE DATEN\n' +
+    'Vorname:        ' + v('a-vorname') + '\n' +
+    'Nachname:       ' + v('a-nachname') + '\n' +
+    'Geburtsdatum:   ' + v('a-geb') + '\n' +
+    'Geschlecht:     ' + v('a-geschlecht') + '\n\n' +
+    'KONTAKTDATEN\n' +
+    'Straße:         ' + v('a-strasse') + '\n' +
+    'PLZ / Ort:      ' + v('a-plz') + ' ' + v('a-ort') + '\n' +
+    'E-Mail:         ' + v('a-email') + '\n' +
+    'Telefon:        ' + v('a-tel') + '\n\n' +
+    'SPORTART & GRUPPE\n' +
+    'Sportart:       ' + v('a-sportart') + '\n' +
+    'Erfahrung:      ' + v('a-erfahrung') + '\n' +
+    'Gürtelgrad:     ' + v('a-grad') + '\n\n' +
+    'ERZIEHUNGSBERECHTIGTE (bei Minderjährigen)\n' +
+    'Name:           ' + v('a-eb-name') + '\n' +
+    'Telefon:        ' + v('a-eb-tel') + '\n\n' +
+    'BANKVERBINDUNG\n' +
+    'Kontoinhaber:   ' + v('a-kontoinhaber') + '\n' +
+    'IBAN:           ' + v('a-iban') + '\n' +
+    'BIC:            ' + v('a-bic') + '\n' +
+    'Kreditinstitut: ' + v('a-bank') + '\n' +
+    'SEPA-Mandat:    erteilt\n\n' +
+    'EINWILLIGUNGEN\n' +
+    'Satzung:        anerkannt\n' +
+    'Datenschutz:    zugestimmt\n\n' +
+    'ANMERKUNGEN\n' + (v('a-anmerkung') || '–');
+
+  window.location.href =
+    'mailto:info@kodokan-olsberg.de' +
+    '?subject=' + encodeURIComponent('Aufnahmeantrag – ' + v('a-vorname') + ' ' + v('a-nachname')) +
+    '&body=' + encodeURIComponent(body);
+});
+</script>
 </body>
 </html>
