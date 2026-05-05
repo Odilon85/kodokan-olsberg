@@ -71,15 +71,14 @@ nav {
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
-  background: url('../images/Hero-neu.PNG') center center / cover no-repeat;
+  background: url('../images/Hero-neu.PNG') 15% center / auto 110% no-repeat;
 }
 .hero-bg::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to bottom,
-    rgba(10,10,10,.35) 0%,
-    rgba(10,10,10,.15) 30%,
-    rgba(10,10,10,.5) 65%,
-    rgba(10,10,10,.95) 100%);
+  background:
+    linear-gradient(to right,  rgba(10,10,10,.2) 40%, rgba(10,10,10,1) 82%),
+    linear-gradient(to bottom, rgba(10,10,10,.7) 0%,  rgba(10,10,10,.45) 35%, rgba(10,10,10,.72) 68%, rgba(10,10,10,1) 100%),
+    linear-gradient(to bottom, rgba(10,10,10,1) 0%,   transparent 12%);
 }
 .hero::before { display: none; }
 .hero-inner { position: relative; z-index: 1; max-width: 760px; }
@@ -132,6 +131,7 @@ nav {
 }
 .card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: var(--shadow); }
 .card-icon { width: 48px; height: 48px; background: rgba(204,0,0,.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1.1rem; }
+.card-icon svg { width: 22px; height: 22px; stroke: var(--primary); flex-shrink: 0; }
 .card h3 { font-size: 1.1rem; margin-bottom: .4rem; }
 .card p { color: var(--text-muted); font-size: .9rem; line-height: 1.65; }
 
@@ -252,6 +252,8 @@ tr:hover td { background: rgba(255,255,255,.018); }
 .page-header .container { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; flex-wrap: wrap; }
 .page-header h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin-bottom: .3rem; }
 .page-header p { color: var(--text-muted); font-size: 1rem; }
+.page-header--judo { background: linear-gradient(to right, rgba(10,10,10,1) 35%, rgba(10,10,10,.65) 100%), url('../images/Judosport.png') right center / cover no-repeat; }
+.page-header--jiujitsu { background: linear-gradient(to right, rgba(10,10,10,1) 35%, rgba(10,10,10,.65) 100%), url('../images/Jiusport.png') right center / cover no-repeat; }
 
 /* ── PROSE (legal/statutes) ──────────────────────── */
 .prose { max-width: 800px; }

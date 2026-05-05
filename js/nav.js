@@ -61,7 +61,6 @@
   </div>
   <div class="footer-bottom">
     <span>© <span id="yr"></span> Judoverein Kodokan Olsberg e.V.</span>
-    <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </div>
 </footer>`;
 
