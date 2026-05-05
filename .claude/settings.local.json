@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force)",
+      "PowerShell(Get-ExecutionPolicy -Scope CurrentUser)",
+      "PowerShell(winget install --id Git.Git -e --source winget)"
+    ]
+  }
+}

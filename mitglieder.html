@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitgliederbereich – Kodokan Olsberg</title>
+  <meta name="description" content="Mitgliederbereich des Judovereins Kodokan Olsberg – Dokumente, interne Infos und mehr.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="nav-root"></div>
+
+<div class="page-header">
+  <div class="container">
+    <div>
+      <div class="section-tag">Exklusiv</div>
+      <h1>Mitgliederbereich</h1>
+      <p>Interne Dokumente, Trainingsunterlagen und Vereinsinformationen</p>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- LOGIN / ZUGANGSSPERRE -->
+    <!-- Für echten Login-Schutz ist ein Backend (PHP, Node.js o.ä.) nötig. -->
+    <!-- Diese Seite zeigt einen statischen Mitgliederbereich. -->
+
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:start">
+
+      <!-- ANMELDEN -->
+      <div>
+        <div class="section-tag">Zugang</div>
+        <h2 class="section-title">Mitglieder-Login</h2>
+        <div class="form-card mt-2">
+          <div class="fg">
+            <label for="m-email">E-Mail</label>
+            <input type="email" id="m-email" name="email" placeholder="mitglied@email.de">
+          </div>
+          <div class="fg">
+            <label for="m-pw">Passwort</label>
+            <input type="password" id="m-pw" name="passwort" placeholder="••••••••">
+          </div>
+          <button type="button" class="btn btn-primary" style="width:100%" onclick="showNote()">Einloggen</button>
+          <p style="text-align:center;margin-top:.85rem;font-size:.82rem;color:var(--text-muted)">
+            Noch kein Zugang? <a href="kontakt.html">Vorstand kontaktieren</a>
+          </p>
+        </div>
+        <div id="loginNote" style="display:none;margin-top:1rem" class="alert alert-info">
+          ℹ️ Der Login-Bereich erfordert ein Backend (z.B. PHP oder Node.js). Bitte beim Webmaster nachfragen.
+        </div>
+      </div>
+
+      <!-- DOKUMENTE (öffentlich sichtbar) -->
+      <div>
+        <div class="section-tag">Dokumente</div>
+        <h2 class="section-title">Vereinsdokumente</h2>
+        <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1.5rem">Folgende Dokumente sind öffentlich zugänglich. Weitere Unterlagen erhalten eingeloggte Mitglieder.</p>
+        <div class="grid-2" style="gap:1rem">
+          <div class="card" style="display:flex;gap:1rem;align-items:center;padding:1.25rem">
+            <div style="font-size:1.75rem">📄</div>
+            <div>
+              <div style="font-size:.95rem;font-weight:700">Vereinssatzung</div>
+              <a href="satzung.html" style="font-size:.82rem;color:var(--primary)">Online ansehen →</a>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:1rem;align-items:center;padding:1.25rem">
+            <div style="font-size:1.75rem">📋</div>
+            <div>
+              <div style="font-size:.95rem;font-weight:700">Aufnahmeantrag</div>
+              <a href="aufnahmeantrag.html" style="font-size:.82rem;color:var(--primary)">Formular öffnen →</a>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:1rem;align-items:center;padding:1.25rem">
+            <div style="font-size:1.75rem">🔒</div>
+            <div>
+              <div style="font-size:.95rem;font-weight:700">Trainingsplan</div>
+              <span style="font-size:.82rem;color:var(--text-muted)">Nur für Mitglieder</span>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:1rem;align-items:center;padding:1.25rem">
+            <div style="font-size:1.75rem">🔒</div>
+            <div>
+              <div style="font-size:.95rem;font-weight:700">Wettkampfanmeldungen</div>
+              <span style="font-size:.82rem;color:var(--text-muted)">Nur für Mitglieder</span>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:1rem;align-items:center;padding:1.25rem">
+            <div style="font-size:1.75rem">🔒</div>
+            <div>
+              <div style="font-size:.95rem;font-weight:700">Protokolle (HV)</div>
+              <span style="font-size:.82rem;color:var(--text-muted)">Nur für Mitglieder</span>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:1rem;align-items:center;padding:1.25rem">
+            <div style="font-size:1.75rem">🔒</div>
+            <div>
+              <div style="font-size:.95rem;font-weight:700">Beitragsordnung</div>
+              <span style="font-size:.82rem;color:var(--text-muted)">Nur für Mitglieder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KEIN MITGLIED -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <h2 class="section-title">Noch kein Mitglied?</h2>
+    <p class="section-lead" style="margin:0 auto 2rem">Werde jetzt Teil der Kodokan-Familie und erhalte Zugang zum Mitgliederbereich.</p>
+    <a href="aufnahmeantrag.html" class="btn btn-primary">Mitglied werden</a>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+<script>function showNote(){ document.getElementById('loginNote').style.display='block'; }</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufnahmeantrag – Kodokan Olsberg</title>
+  <meta name="description" content="Mitglied werden beim Judoverein Kodokan Olsberg – Aufnahmeantrag online ausfüllen.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="nav-root"></div>
+
+<div class="page-header">
+  <div class="container">
+    <div>
+      <div class="section-tag">Mitmachen</div>
+      <h1>Aufnahmeantrag</h1>
+      <p>Werde Mitglied beim Judoverein Kodokan Olsberg e.V.</p>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="max-width:720px">
+
+    <div class="alert alert-info mb-2">
+      Alle mit <strong>*</strong> markierten Felder sind Pflichtfelder. Nach dem Absenden melden wir uns per E-Mail bei dir.
+    </div>
+
+    <div class="form-card">
+      <form id="appForm">
+
+        <h3 style="font-size:1rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:1.25rem">Persönliche Daten</h3>
+        <div class="form-row">
+          <div class="fg">
+            <label for="a-vorname">Vorname *</label>
+            <input type="text" id="a-vorname" name="vorname" required>
+          </div>
+          <div class="fg">
+            <label for="a-nachname">Nachname *</label>
+            <input type="text" id="a-nachname" name="nachname" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="a-geb">Geburtsdatum *</label>
+            <input type="date" id="a-geb" name="geburtsdatum" required>
+          </div>
+          <div class="fg">
+            <label for="a-geschlecht">Geschlecht</label>
+            <select id="a-geschlecht" name="geschlecht">
+              <option value="">Bitte wählen</option>
+              <option>Männlich</option>
+              <option>Weiblich</option>
+              <option>Divers</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <h3 style="font-size:1rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:1.25rem">Kontaktdaten</h3>
+        <div class="fg">
+          <label for="a-strasse">Straße &amp; Hausnummer *</label>
+          <input type="text" id="a-strasse" name="strasse" required>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="a-plz">PLZ *</label>
+            <input type="text" id="a-plz" name="plz" maxlength="5" pattern="[0-9]{5}" required>
+          </div>
+          <div class="fg">
+            <label for="a-ort">Ort *</label>
+            <input type="text" id="a-ort" name="ort" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="a-email">E-Mail *</label>
+            <input type="email" id="a-email" name="email" required>
+          </div>
+          <div class="fg">
+            <label for="a-tel">Telefon</label>
+            <input type="tel" id="a-tel" name="telefon">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <h3 style="font-size:1rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:1.25rem">Sportart &amp; Gruppe</h3>
+        <div class="fg">
+          <label for="a-sportart">Gewünschte Sportart *</label>
+          <select id="a-sportart" name="sportart" required>
+            <option value="">Bitte wählen ...</option>
+            <option>Judo</option>
+            <option>Jiu-Jitsu</option>
+            <option>Judo und Jiu-Jitsu</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="a-erfahrung">Kampfsporterfahrung</label>
+          <select id="a-erfahrung" name="erfahrung">
+            <option value="">Bitte wählen ...</option>
+            <option>Keine – kompletter Einsteiger</option>
+            <option>Etwas Erfahrung (unter 1 Jahr)</option>
+            <option>1–3 Jahre Erfahrung</option>
+            <option>Mehr als 3 Jahre Erfahrung</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="a-grad">Aktueller Gürtelgrad (falls vorhanden)</label>
+          <input type="text" id="a-grad" name="grad" placeholder="z.B. Weißgurt, 4. Kyu, 1. Dan ...">
+        </div>
+
+        <!-- Bei Minderjährigen -->
+        <div class="divider"></div>
+        <h3 style="font-size:1rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:.5rem">Erziehungsberechtigte</h3>
+        <p style="color:var(--text-muted);font-size:.85rem;margin-bottom:1.25rem">Nur bei Minderjährigen (unter 18 Jahren) ausfüllen.</p>
+        <div class="form-row">
+          <div class="fg">
+            <label for="a-eb-name">Name des Erziehungsberechtigten</label>
+            <input type="text" id="a-eb-name" name="eb_name">
+          </div>
+          <div class="fg">
+            <label for="a-eb-tel">Telefon</label>
+            <input type="tel" id="a-eb-tel" name="eb_tel">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <h3 style="font-size:1rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:1.25rem">Einwilligungen</h3>
+        <div style="margin-bottom:.9rem">
+          <div class="form-check">
+            <input type="checkbox" id="a-satzung" name="satzung" required>
+            <label for="a-satzung">Ich erkenne die <a href="satzung.html">Vereinssatzung</a> des Judovereins Kodokan Olsberg e.V. an. *</label>
+          </div>
+        </div>
+        <div style="margin-bottom:.9rem">
+          <div class="form-check">
+            <input type="checkbox" id="a-dsgvo" name="dsgvo" required>
+            <label for="a-dsgvo">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß DSGVO zu. *</label>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="a-anmerkung">Anmerkungen / Besonderheiten (optional)</label>
+          <textarea id="a-anmerkung" name="anmerkung" placeholder="z.B. Verletzungen, Allergien, Fragen ..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:.5rem">Aufnahmeantrag absenden</button>
+      </form>
+    </div>
+
+    <p class="text-muted mt-2" style="font-size:.82rem;text-align:center">
+      Nach dem Absenden erhältst du eine Bestätigung per E-Mail. Die Mitgliedschaft wird nach Prüfung durch den Vorstand bestätigt.<br>
+      Den aktuellen Mitgliedsbeitrag erfährst du auf Anfrage beim <a href="kontakt.html">Vorstand</a>.
+    </p>
+
+  </div>
+</section>
+
+<div id="footer-root"></div>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
