@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { img } from '../lib/img'
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="footer-grid">
         <div className="footer-about">
           <Link href="/" className="nav-brand">
-            <div className="nav-logo"><img src="/images/logo.png" alt="Kodokan Olsberg" /></div>
+            <div className="nav-logo"><img src={img('/images/logo.png')} alt="Kodokan Olsberg" /></div>
             <div className="nav-name">Kodokan <small>Olsberg</small></div>
           </Link>
           <p>Judo und Jiu-Jitsu im Herzen des Sauerlandes. Willkommen auf der Matte – egal ob Einsteiger oder Wettkämpfer.</p>
@@ -24,7 +25,6 @@ export default function Footer() {
           <h4>Verein</h4>
           <ul>
             <li><Link href="/vorstand">Vorstand</Link></li>
-            <li><Link href="/neuigkeiten">Neuigkeiten</Link></li>
             <li><Link href="/aufnahmeantrag">Mitglied werden</Link></li>
             <li><Link href="/satzung">Satzung</Link></li>
           </ul>
