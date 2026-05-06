@@ -1,0 +1,77 @@
+import Layout from '../components/Layout'
+
+export default function Datenschutz() {
+  return (
+    <Layout title="Datenschutz" description="Datenschutzerklärung des Judovereins Kodokan Olsberg e.V. gemäß DSGVO.">
+
+      <div className="page-header">
+        <div className="container">
+          <div>
+            <div className="section-tag">Rechtliches</div>
+            <h1>Datenschutzerklärung</h1>
+            <p>Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO</p>
+          </div>
+        </div>
+      </div>
+
+      <section className="section">
+        <div className="container">
+          <div className="prose">
+
+            <h2>1. Datenschutz auf einen Blick</h2>
+            <h3>Allgemeine Hinweise</h3>
+            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+            <h3>Datenerfassung auf dieser Website</h3>
+            <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br />
+            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+            <p><strong>Wie erfassen wir Ihre Daten?</strong><br />
+            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
+
+            <h2>2. Verantwortliche Stelle</h2>
+            <p>
+              Kodokan Olsberg e.V.<br />
+              Zum Krähenbrink 38<br />
+              59757 Arnsberg<br />
+              E-Mail: <a href="mailto:info@kodokan-olsberg.de">info@kodokan-olsberg.de</a>
+            </p>
+
+            <h2>3. Datenerfassung auf dieser Website</h2>
+            <h3>Server-Log-Dateien</h3>
+            <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage sowie IP-Adresse. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>
+
+            <h3>Kontaktformular</h3>
+            <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+            <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+
+            <h2>4. Mitgliederdaten</h2>
+            <p>Im Rahmen der Mitgliedschaft beim Judoverein Kodokan Olsberg e.V. erheben und verarbeiten wir personenbezogene Daten (Name, Adresse, Geburtsdatum, Kontaktdaten) zur Verwaltung der Mitgliedschaft gemäß Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie Art. 6 Abs. 1 lit. c DSGVO (gesetzliche Verpflichtungen).</p>
+            <p>Die Daten werden nicht an Dritte weitergegeben, mit Ausnahme der gesetzlich vorgeschriebenen Meldepflichten (z.B. Verbandsmeldungen an den Deutschen Judo-Bund und den Landessportbund NRW).</p>
+
+            <h2>5. Ihre Rechte</h2>
+            <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten.</p>
+            <ul>
+              <li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li>
+              <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li>
+              <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li>
+              <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+              <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+              <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)</li>
+            </ul>
+            <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
+
+            <h2>6. Beschwerderecht bei der Aufsichtsbehörde</h2>
+            <p>Im Falle von Datenschutzverstößen steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem unser Verein seinen Sitz hat. Für NRW: <a href="https://www.ldi.nrw.de" target="_blank" rel="noopener">Landesbeauftragte für Datenschutz und Informationsfreiheit NRW</a>.</p>
+
+            <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+
+            <p><em>Stand: </em></p>
+
+          </div>
+        </div>
+      </section>
+
+    </Layout>
+  )
+}
