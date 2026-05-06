@@ -1,6 +1,28 @@
 import Layout from '../components/Layout'
 import { img } from '../lib/img'
 
+function DanBadge({ dan }) {
+  return (
+    <div className="dan-badge">
+      {dan}. Dan
+      <span className="dan-pips">
+        {Array.from({ length: dan }).map((_, i) => <span key={i} className="dan-pip" />)}
+      </span>
+    </div>
+  )
+}
+
+const BELT_COLORS = { braun: '#7B4F2E', gruen: '#2e7d32' }
+
+function BeltBadge({ color, label }) {
+  return (
+    <div className="dan-badge">
+      <span style={{ width: 10, height: 10, borderRadius: 2, background: BELT_COLORS[color], flexShrink: 0, display: 'inline-block' }} />
+      {label}
+    </div>
+  )
+}
+
 export default function Trainer() {
   return (
     <Layout title="Trainer" description="Unsere lizenzierten Trainer beim Judoverein Kodokan Olsberg.">
@@ -22,13 +44,14 @@ export default function Trainer() {
           {/* JUDO TRAINER */}
           <div className="section-tag mt-2">Judo</div>
           <h2 className="section-title mb-2">Judo-Trainer</h2>
-          <div className="grid-4">
+          <div className="grid-3">
             <div className="team-card">
               <div className="avatar" style={{background:'none',width:'80px',height:'80px',borderRadius:'50%',overflow:'hidden'}}>
                 <img src={img('/images/trainer-tia.jpg')} alt="Tia den Ridder" style={{width:'80px',height:'80px',objectFit:'cover'}} />
               </div>
               <div className="team-name">Tia den Ridder</div>
               <div className="team-role">Trainerin Judo</div>
+              <DanBadge dan={2} />
               <div className="team-belt">Freitag: Wettkampf &amp; Kata</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Trainiert Wettkampf- und Kata-Gruppen sowie die Kinder- und Leistungsgruppe.</p>
             </div>
@@ -38,6 +61,7 @@ export default function Trainer() {
               </div>
               <div className="team-name">Nico Berkenkopf</div>
               <div className="team-role">Trainer Judo</div>
+              <DanBadge dan={1} />
               <div className="team-belt">Dienstag: Jugend &amp; Erwachsene</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Zuständig für die Jugendgruppe (6–11 J.) und das Erwachsenentraining dienstags.</p>
             </div>
@@ -47,6 +71,7 @@ export default function Trainer() {
               </div>
               <div className="team-name">Tobias Klappert</div>
               <div className="team-role">Trainer Judo</div>
+              <DanBadge dan={3} />
               <div className="team-belt">Do: Leistungsgruppe &amp; Erwachsene</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Leitet die Leistungsgruppe, das Erwachsenentraining donnerstags sowie die Wettkampfgruppe.</p>
             </div>
@@ -56,8 +81,25 @@ export default function Trainer() {
               </div>
               <div className="team-name">Jamie den Ridder</div>
               <div className="team-role">Trainer Judo</div>
+              <DanBadge dan={2} />
               <div className="team-belt">Montag: Kraft &amp; Ausdauer</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Verantwortlich für das Kraft- und Ausdauertraining montags (ab 7 Jahre).</p>
+            </div>
+            <div className="team-card">
+              <div className="avatar">👤</div>
+              <div className="team-name">Albert Smajli</div>
+              <div className="team-role">Trainer Judo</div>
+              <BeltBadge color="braun" label="Braun" />
+              <div className="team-belt">Donnerstag: Kindertraining</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
+            </div>
+            <div className="team-card">
+              <div className="avatar">👤</div>
+              <div className="team-name">Jule Dittrich</div>
+              <div className="team-role">Trainerin Judo</div>
+              <BeltBadge color="gruen" label="Grün" />
+              <div className="team-belt">Donnerstag: Kindertraining</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
             </div>
           </div>
 

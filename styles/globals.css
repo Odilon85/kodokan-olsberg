@@ -18,7 +18,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
+body { font-family: 'Barlow', 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
 img { max-width: 100%; display: block; }
 a { color: var(--primary); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--primary-light); }
@@ -185,6 +185,9 @@ tr:hover td { background: rgba(255,255,255,.018); }
 .team-name { font-size: 1.05rem; font-weight: 700; margin-bottom: .2rem; }
 .team-role { font-size: .82rem; color: var(--primary); margin-bottom: .2rem; font-weight: 600; }
 .team-belt { font-size: .78rem; color: var(--text-muted); }
+.dan-badge { display: inline-flex; align-items: center; gap: .45rem; background: #111; border: 1px solid var(--border); border-radius: 4px; padding: .22rem .55rem; font-size: .72rem; font-weight: 700; color: var(--text-muted); letter-spacing: .5px; margin: .3rem 0; }
+.dan-pips { display: flex; gap: 3px; }
+.dan-pip { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); }
 .board-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .85rem; margin-bottom: 2rem; }
 .board-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.25rem; display: flex; align-items: center; gap: 1rem; transition: border-color .2s; }
 .board-card:hover { border-color: var(--primary); }
