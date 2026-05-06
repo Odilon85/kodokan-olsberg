@@ -1,0 +1,99 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kodokan Olsberg//Trainingszeiten//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kodokan Olsberg – Trainingszeiten
+X-WR-TIMEZONE:Europe/Berlin
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260511T180000
+DTEND;TZID=Europe/Berlin:20260511T193000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+SUMMARY:Kraft / Ausdauer – Judo
+DESCRIPTION:ab 7 Jahre\nTrainer: Jamie\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260512T180000
+DTEND;TZID=Europe/Berlin:20260512T191500
+RRULE:FREQ=WEEKLY;BYDAY=TU
+SUMMARY:Jugendtraining – Judo
+DESCRIPTION:6–11 Jahre\nTrainer: Nico\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260512T193000
+DTEND;TZID=Europe/Berlin:20260512T210000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+SUMMARY:Erwachsenentraining – Judo
+DESCRIPTION:ab 15 Jahre\nTrainer: Nico\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260512T193000
+DTEND;TZID=Europe/Berlin:20260512T210000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+SUMMARY:Jiu-Jitsu – Dienstag
+DESCRIPTION:alle Altersgruppen\nTrainer: Dirk\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260514T163000
+DTEND;TZID=Europe/Berlin:20260514T174500
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Kindertraining – Judo
+DESCRIPTION:ab 4 Jahre\nTrainer: Tobi / Tia / Albert / Jule\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260514T174500
+DTEND;TZID=Europe/Berlin:20260514T191500
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Leistungsgruppe – Judo
+DESCRIPTION:ab Orange Gurt\nTrainer: Tobi / Tia\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260514T193000
+DTEND;TZID=Europe/Berlin:20260514T210000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Erwachsenentraining – Judo
+DESCRIPTION:ab 15 Jahre\nTrainer: Tobi\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260514T193000
+DTEND;TZID=Europe/Berlin:20260514T210000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Jiu-Jitsu – Donnerstag
+DESCRIPTION:alle Altersgruppen\nTrainer: Carsten / Frank\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260515T180000
+DTEND;TZID=Europe/Berlin:20260515T193000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+SUMMARY:Wettkampftraining – Judo
+DESCRIPTION:ab Gelb Gurt\nTrainer: Tia / Tobi\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20260515T193000
+DTEND;TZID=Europe/Berlin:20260515T210000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+SUMMARY:Kata / Spiel & Spaß – Judo
+DESCRIPTION:Wochenwechsel\nTrainer: Tia / Tobi\nTurnhalle der Real- und Sekundarschule Olsberg
+LOCATION:Bahnhofstraße 59\, 59939 Olsberg
+END:VEVENT
+
+END:VCALENDAR
