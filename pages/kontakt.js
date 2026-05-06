@@ -2,8 +2,6 @@ import { useState } from 'react'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
-const STATIC = process.env.NEXT_PUBLIC_STATIC === 'true'
-
 export default function Kontakt() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -32,10 +30,10 @@ export default function Kontakt() {
       if (res.ok) {
         setSubmitted(true)
       } else {
-        setError('Es ist ein Fehler aufgetreten. Bitte versuche es später erneut.')
+        setError('Es ist ein Fehler aufgetreten. Bitte schreibe uns direkt an info@kodokan-olsberg.de')
       }
     } catch {
-      setError('Es ist ein Fehler aufgetreten. Bitte versuche es später erneut.')
+      setError('Es ist ein Fehler aufgetreten. Bitte schreibe uns direkt an info@kodokan-olsberg.de')
     } finally {
       setLoading(false)
     }
@@ -121,13 +119,7 @@ export default function Kontakt() {
               <div className="section-tag">Formular</div>
               <h2 className="section-title">Nachricht schreiben</h2>
               <div className="form-card mt-2">
-                {STATIC ? (
-                  <div className="alert alert-info">
-                    <strong>Kontaktformular</strong><br />
-                    Schreibe uns direkt eine E-Mail:<br />
-                    <a href="mailto:info@kodokan-olsberg.de" style={{fontWeight:'600'}}>info@kodokan-olsberg.de</a>
-                  </div>
-                ) : submitted ? (
+                {submitted ? (
                   <div className="alert alert-info">
                     <strong>Vielen Dank für deine Nachricht!</strong><br />
                     Wir melden uns so schnell wie möglich bei dir.

@@ -2,8 +2,6 @@ import { useState } from 'react'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
-const STATIC = process.env.NEXT_PUBLIC_STATIC === 'true'
-
 export default function Aufnahmeantrag() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -46,7 +44,7 @@ export default function Aufnahmeantrag() {
       if (res.ok) {
         setSubmitted(true)
       } else {
-        setError('Es ist ein Fehler aufgetreten. Bitte versuche es später erneut.')
+        setError('Es ist ein Fehler aufgetreten. Bitte sende uns deinen Antrag direkt per E-Mail an info@kodokan-olsberg.de')
       }
     } catch {
       setError('Es ist ein Fehler aufgetreten. Bitte versuche es später erneut.')
@@ -69,12 +67,7 @@ export default function Aufnahmeantrag() {
       <section className="section">
         <div className="container" style={{maxWidth:'720px'}}>
 
-          {STATIC ? (
-            <div className="alert alert-info mb-2">
-              <strong>Online-Anmeldung</strong><br />
-              Schreibe uns eine E-Mail an <a href="mailto:info@kodokan-olsberg.de" style={{fontWeight:'600'}}>info@kodokan-olsberg.de</a> – wir senden dir dann den Aufnahmeantrag zu.
-            </div>
-          ) : submitted ? (
+          {submitted ? (
             <div className="alert alert-info mb-2">
               <strong>Vielen Dank für deinen Aufnahmeantrag!</strong><br />
               Wir haben deine Daten erhalten und melden uns per E-Mail bei dir. Die Mitgliedschaft wird nach Prüfung durch den Vorstand bestätigt.
