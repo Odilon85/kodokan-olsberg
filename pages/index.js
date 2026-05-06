@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import { img } from '../lib/img'
+import NextTraining from '../components/NextTraining'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Link href="/aufnahmeantrag" className="btn btn-primary">Jetzt Mitglied werden</Link>
             <Link href="/judo" className="btn btn-ghost">Trainingszeiten ansehen</Link>
           </div>
+          <NextTraining />
         </div>
       </section>
 

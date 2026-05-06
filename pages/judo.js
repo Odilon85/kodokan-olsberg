@@ -114,6 +114,9 @@ export default function Judo() {
             </div>
 
           </div>
+          <div style={{marginTop:'1.25rem'}}>
+            <a href="/trainingszeiten.ics" download className="btn btn-ghost btn-sm">📅 Trainingszeiten in Kalender importieren</a>
+          </div>
         </div>
       </section>
 

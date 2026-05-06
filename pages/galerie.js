@@ -1,7 +1,39 @@
+import { useState } from 'react'
 import Layout from '../components/Layout'
 import { img } from '../lib/img'
+import Lightbox from 'yet-another-react-lightbox'
+import 'yet-another-react-lightbox/styles.css'
+
+const SECTIONS = [
+  {
+    tag: 'Training', title: 'Trainingseindrücke',
+    images: ['Training-1.jpg','Training-2.jpg','Training-3.jpg','Training-4.jpg'],
+    alt: 'Training',
+  },
+  {
+    tag: 'Wettkämpfe', title: 'Wettkampfergebnisse',
+    images: ['Erfolge-1.jpg','Erfolge-2.jpg','Erfolge-3.jpg','Wettkampf-1.jpg','Wettkampf-2.jpg','Wettkampf-3.jpg','Wettkampf-4.jpg','Wettkampf-5.jpg','Wettkampf-6.jpg','Wettkampf-7.jpg'],
+    alt: 'Wettkampf',
+  },
+  {
+    tag: 'Vereinsleben', title: 'Gemeinschaft & Events',
+    images: ['Freizeit-1.jpg','Freizeit-2.jpg','Freizeit-3.jpg','Freizeit-4.jpg','Freizeit-5.jpg'],
+    alt: 'Vereinsleben',
+  },
+]
+
+const allSlides = SECTIONS.flatMap(s => s.images.map(f => ({ src: img(`/images/${f}`) })))
 
 export default function Galerie() {
+  const [open, setOpen] = useState(false)
+  const [slideIndex, setSlideIndex] = useState(0)
+
+  function openAt(globalIndex) {
+    setSlideIndex(globalIndex)
+    setOpen(true)
+  }
+
+  let offset = 0
   return (
     <Layout title="Galerie" description="Bilder und Impressionen vom Training und den Wettkämpfen des Judovereins Kodokan Olsberg.">
 
@@ -17,47 +49,38 @@ export default function Galerie() {
 
       <section className="section">
         <div className="container">
-
-          <div className="section-tag">Training</div>
-          <h2 className="section-title mb-2">Trainingseindrücke</h2>
-          <div className="gallery-grid">
-            <div className="gallery-item"><img src={img('/images/Training-1.jpg')} alt="Training" /></div>
-            <div className="gallery-item"><img src={img('/images/Training-2.jpg')} alt="Training" /></div>
-            <div className="gallery-item"><img src={img('/images/Training-3.jpg')} alt="Training" /></div>
-            <div className="gallery-item"><img src={img('/images/Training-4.jpg')} alt="Training" /></div>
-          </div>
-
-          <div className="divider mt-3"></div>
-
-          <div className="section-tag mt-2">Wettkämpfe</div>
-          <h2 className="section-title mb-2">Wettkampfergebnisse</h2>
-          <div className="gallery-grid">
-            <div className="gallery-item"><img src={img('/images/Erfolge-1.jpg')} alt="Erfolge" /></div>
-            <div className="gallery-item"><img src={img('/images/Erfolge-2.jpg')} alt="Erfolge" /></div>
-            <div className="gallery-item"><img src={img('/images/Erfolge-3.jpg')} alt="Erfolge" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-1.jpg')} alt="Wettkampf" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-2.jpg')} alt="Wettkampf" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-3.jpg')} alt="Wettkampf" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-4.jpg')} alt="Wettkampf" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-5.jpg')} alt="Wettkampf" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-6.jpg')} alt="Wettkampf" /></div>
-            <div className="gallery-item"><img src={img('/images/Wettkampf-7.jpg')} alt="Wettkampf" /></div>
-          </div>
-
-          <div className="divider mt-3"></div>
-
-          <div className="section-tag mt-2">Vereinsleben</div>
-          <h2 className="section-title mb-2">Gemeinschaft &amp; Events</h2>
-          <div className="gallery-grid">
-            <div className="gallery-item"><img src={img('/images/Freizeit-1.jpg')} alt="Vereinsleben" /></div>
-            <div className="gallery-item"><img src={img('/images/Freizeit-2.jpg')} alt="Vereinsleben" /></div>
-            <div className="gallery-item"><img src={img('/images/Freizeit-3.jpg')} alt="Vereinsleben" /></div>
-            <div className="gallery-item"><img src={img('/images/Freizeit-4.jpg')} alt="Vereinsleben" /></div>
-            <div className="gallery-item"><img src={img('/images/Freizeit-5.jpg')} alt="Vereinsleben" /></div>
-          </div>
-
+          {SECTIONS.map((sec, si) => {
+            const sectionOffset = offset
+            offset += sec.images.length
+            return (
+              <div key={sec.tag}>
+                {si > 0 && <div className="divider mt-3"></div>}
+                <div className={si > 0 ? 'section-tag mt-2' : 'section-tag'}>{sec.tag}</div>
+                <h2 className="section-title mb-2">{sec.title}</h2>
+                <div className="gallery-grid">
+                  {sec.images.map((file, i) => (
+                    <div
+                      key={file}
+                      className="gallery-item"
+                      onClick={() => openAt(sectionOffset + i)}
+                      style={{cursor:'pointer'}}
+                    >
+                      <img src={img(`/images/${file}`)} alt={sec.alt} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
         </div>
       </section>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={slideIndex}
+        slides={allSlides}
+      />
 
     </Layout>
   )
