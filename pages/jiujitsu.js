@@ -75,6 +75,18 @@ export default function Jiujitsu() {
         </div>
       </section>
 
+      {/* GRUPPENFOTO JIU */}
+      <div className="photo-banner">
+        <img src={img('/images/Jiu-Gruppe.JPEG')} alt="Die Jiu-Jitsu-Gruppe des Kodokan Olsberg" style={{objectPosition: 'center 20%'}} />
+        <div className="photo-banner-overlay">
+          <div className="photo-banner-text">
+            <div className="section-tag">Gemeinschaft</div>
+            <h2><span style={{whiteSpace:'nowrap'}}>Stark gemeinsam –</span><br />auf und neben der Matte</h2>
+            <p>Unsere Jiu-Jitsu-Gruppe verbindet Menschen aller Altersgruppen durch Technik, Respekt und Teamgeist.</p>
+          </div>
+        </div>
+      </div>
+
       {/* VORTEILE */}
       <section className="section">
         <div className="container">

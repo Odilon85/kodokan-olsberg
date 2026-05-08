@@ -120,6 +120,18 @@ export default function Judo() {
         </div>
       </section>
 
+      {/* GRUPPENFOTO */}
+      <div className="photo-banner">
+        <img src={img('/images/Gruppenfoto.jpg')} alt="Die Judo-Mannschaft des Kodokan Olsberg" style={{objectPosition: 'center 20%'}} />
+        <div className="photo-banner-overlay">
+          <div className="photo-banner-text">
+            <div className="section-tag">Gemeinschaft</div>
+            <h2>Mehr als Sport –<br />ein Verein</h2>
+            <p>Ob Wettkampf oder Training, jung oder alt – beim Kodokan Olsberg zieht jeder am selben Strang.</p>
+          </div>
+        </div>
+      </div>
+
       {/* WARUM JUDO */}
       <section className="section">
         <div className="container">

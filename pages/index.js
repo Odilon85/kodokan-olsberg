@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        <div className="hero-bg" style={{backgroundImage: `url(${img('/images/Gruppenfoto.jpg')})`}}></div>
+        <div className="hero-bg"></div>
         <div className="hero-inner">
           <img src={img('/images/logo.png')} alt="Kodokan Olsberg" style={{display:'block',margin:'0 auto 1.5rem',width:'145px',height:'145px',objectFit:'contain',opacity:.75,filter:'drop-shadow(0 2px 8px rgba(0,0,0,.6))'}} />
           <h1>Willkommen beim<em>Kodokan Olsberg</em></h1>
