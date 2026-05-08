@@ -52,8 +52,8 @@ export default function Trainer() {
               <div className="team-name">Tia den Ridder</div>
               <div className="team-role">Trainerin Judo</div>
               <DanBadge dan={2} />
-              <div className="team-belt">Freitag: Wettkampf &amp; Kata</div>
-              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Trainiert Wettkampf- und Kata-Gruppen sowie die Kinder- und Leistungsgruppe.</p>
+              <div className="team-belt">Do: Kinder &amp; Jugend · Fr: Leistung, Wettkampf &amp; Kata</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Leitet donnerstags das Kinder- und Jugendtraining sowie freitags Leistungsgruppe, Wettkampf und Kata.</p>
             </div>
             <div className="team-card">
               <div className="avatar" style={{background:'none',width:'80px',height:'80px',borderRadius:'50%',overflow:'hidden'}}>
@@ -63,7 +63,7 @@ export default function Trainer() {
               <div className="team-role">Trainer Judo</div>
               <DanBadge dan={1} />
               <div className="team-belt">Dienstag: Jugend &amp; Erwachsene</div>
-              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Zuständig für die Jugendgruppe (6–11 J.) und das Erwachsenentraining dienstags.</p>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Leitet das Jugendtraining gemeinsam mit Jamie sowie das Erwachsenentraining dienstags.</p>
             </div>
             <div className="team-card">
               <div className="avatar" style={{background:'none',width:'80px',height:'80px',borderRadius:'50%',overflow:'hidden'}}>
@@ -72,8 +72,8 @@ export default function Trainer() {
               <div className="team-name">Tobias Klappert</div>
               <div className="team-role">Trainer Judo</div>
               <DanBadge dan={3} />
-              <div className="team-belt">Do: Leistungsgruppe &amp; Erwachsene</div>
-              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Leitet die Leistungsgruppe, das Erwachsenentraining donnerstags sowie die Wettkampfgruppe.</p>
+              <div className="team-belt">Do: Kinder, Jugend &amp; Senioren · Fr: Leistung &amp; Wettkampf</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Leitet donnerstags das Kinder-, Jugend- und Seniorentraining sowie freitags Leistungsgruppe und Wettkampf.</p>
             </div>
             <div className="team-card">
               <div className="avatar" style={{background:'none',width:'80px',height:'80px',borderRadius:'50%',overflow:'hidden'}}>
@@ -82,13 +82,13 @@ export default function Trainer() {
               <div className="team-name">Jamie den Ridder</div>
               <div className="team-role">Trainer Judo</div>
               <DanBadge dan={2} />
-              <div className="team-belt">Montag: Kraft &amp; Ausdauer</div>
-              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Verantwortlich für das Kraft- und Ausdauertraining montags (ab 7 Jahre).</p>
+              <div className="team-belt">Mo: Kraft &amp; Ausdauer · Di: Jugendtraining</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Leitet das Kraft- und Ausdauertraining montags sowie das Jugendtraining dienstags.</p>
             </div>
             <div className="team-card">
               <div className="avatar">👤</div>
               <div className="team-name">Albert Smajli</div>
-              <div className="team-role">Trainer Judo</div>
+              <div className="team-role">Assistenztrainer Judo</div>
               <BeltBadge color="braun" label="Braun" />
               <div className="team-belt">Donnerstag: Kindertraining</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
@@ -96,7 +96,23 @@ export default function Trainer() {
             <div className="team-card">
               <div className="avatar">👤</div>
               <div className="team-name">Jule Dittrich</div>
-              <div className="team-role">Trainerin Judo</div>
+              <div className="team-role">Assistenztrainerin Judo</div>
+              <BeltBadge color="gruen" label="Grün" />
+              <div className="team-belt">Donnerstag: Kindertraining</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
+            </div>
+            <div className="team-card">
+              <div className="avatar">👤</div>
+              <div className="team-name">Ricardo Lakatos</div>
+              <div className="team-role">Assistenztrainer Judo</div>
+              <BeltBadge color="gruen" label="Grün" />
+              <div className="team-belt">Dienstag: Jugendtraining</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Jugendtraining dienstags.</p>
+            </div>
+            <div className="team-card">
+              <div className="avatar">👤</div>
+              <div className="team-name">Felix Stappert</div>
+              <div className="team-role">Assistenztrainer Judo</div>
               <BeltBadge color="gruen" label="Grün" />
               <div className="team-belt">Donnerstag: Kindertraining</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>

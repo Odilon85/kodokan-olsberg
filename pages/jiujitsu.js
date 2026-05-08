@@ -38,43 +38,6 @@ export default function Jiujitsu() {
         </div>
       </section>
 
-      {/* TRAININGSZEITEN */}
-      <section className="section section-alt">
-        <div className="container">
-          <div className="section-tag">Wann &amp; Wo</div>
-          <h2 className="section-title">Trainingszeiten Jiu-Jitsu</h2>
-          <p className="section-lead">Trainingsstätte: <strong>Turnhalle der städtischen Real- und Sekundarschule Olsberg</strong>, Bahnhofstraße 59, 59939 Olsberg.</p>
-          <div className="schedule-grid">
-
-            {/* DIENSTAG */}
-            <div className="day-card">
-              <div className="day-label">Dienstag</div>
-              <div className="session">
-                <div className="session-time">⏱ 19:30 – 21:00</div>
-                <div className="session-name">Jiu-Jitsu</div>
-                <div className="session-info">alle Altersgruppen</div>
-                <div className="session-trainer">👤 Dirk</div>
-              </div>
-            </div>
-
-            {/* DONNERSTAG */}
-            <div className="day-card">
-              <div className="day-label">Donnerstag</div>
-              <div className="session">
-                <div className="session-time">⏱ 19:30 – 21:00</div>
-                <div className="session-name">Jiu-Jitsu</div>
-                <div className="session-info">alle Altersgruppen</div>
-                <div className="session-trainer">👤 Carsten / Frank</div>
-              </div>
-            </div>
-
-          </div>
-          <div style={{marginTop:'1.25rem'}}>
-            <a href="/trainingszeiten.ics" download className="btn btn-ghost btn-sm">📅 Trainingszeiten in Kalender importieren</a>
-          </div>
-        </div>
-      </section>
-
       {/* GRUPPENFOTO JIU */}
       <div className="photo-banner">
         <img src={img('/images/Jiu-Gruppe.JPEG')} alt="Die Jiu-Jitsu-Gruppe des Kodokan Olsberg" style={{objectPosition: 'center 20%'}} />

@@ -11,6 +11,7 @@ export default function Nav() {
     { href: '/', label: 'Start', match: 'index.html' },
     { href: '/judo', label: 'Judo', match: 'judo.html' },
     { href: '/jiujitsu', label: 'Jiu-Jitsu', match: 'jiujitsu.html' },
+    { href: '/trainingszeiten', label: 'Trainingszeiten', match: 'trainingszeiten.html' },
     { href: '/trainer', label: 'Trainer', match: 'trainer.html' },
     { href: '/vorstand', label: 'Vorstand', match: 'vorstand.html' },
     { href: '/galerie', label: 'Galerie', match: 'galerie.html' },

@@ -70,6 +70,10 @@ export default function Vorstand() {
               <div className="board-avatar"><img src={img('/images/trainer-tia.jpg')} alt="Tia den Ridder" /></div>
               <div><div className="board-card-name">Tia den Ridder</div><div className="board-card-role">Jugendleitung</div></div>
             </div>
+            <div className="board-card">
+              <div className="board-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+              <div><div className="board-card-name">Jacqueline Stappert</div><div className="board-card-role">Erweiterter Vorstand · Presse</div></div>
+            </div>
           </div>
         </div>
       </section>

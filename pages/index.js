@@ -16,7 +16,7 @@ export default function Home() {
           <p>Judo und Jiu-Jitsu für alle Altersgruppen – vom ersten Wurf bis zur Meisterschaft. Werde Teil unserer Gemeinschaft.</p>
           <div className="hero-btns">
             <Link href="/aufnahmeantrag" className="btn btn-primary">Jetzt Mitglied werden</Link>
-            <Link href="/judo" className="btn btn-ghost">Trainingszeiten ansehen</Link>
+            <Link href="#trainingszeiten" className="btn btn-ghost">Trainingszeiten ansehen</Link>
           </div>
           <NextTraining />
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
                 <div className="sport-card-sub">Der sanfte Weg</div>
                 <div className="sport-card-title">JUDO</div>
                 <p className="sport-card-desc">„Der sanfte Weg" – Judo ist eine der meistverbreiteten Kampfsportarten der Welt und olympische Disziplin. Im Fokus stehen Wurftechniken, Bodenkampf und mentale Stärke.</p>
-                <Link href="/judo" className="btn btn-primary btn-sm">Trainingszeiten &amp; Details</Link>
+                <Link href="/judo" className="btn btn-primary btn-sm">Details</Link>
               </div>
             </div>
             <div className="sport-card">
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="sport-card-sub">Die sanfte Kunst</div>
                 <div className="sport-card-title">JIU-JITSU</div>
                 <p className="sport-card-desc">Die „sanfte Kunst" – Jiu-Jitsu kombiniert Hebel, Würge- und Wurftechniken zur effektiven Selbstverteidigung. Ideal für Einsteiger und erfahrene Kämpfer.</p>
-                <Link href="/jiujitsu" className="btn btn-primary btn-sm">Trainingszeiten &amp; Details</Link>
+                <Link href="/jiujitsu" className="btn btn-primary btn-sm">Details</Link>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* TRAININGSZEITEN */}
-      <section className="section section-alt">
+      <section id="trainingszeiten" className="section section-alt">
         <div className="container">
           <div className="section-tag">Training</div>
           <h2 className="section-title">Trainingszeiten (Übersicht)</h2>
@@ -123,28 +123,29 @@ export default function Home() {
               <div className="day-label">Montag</div>
               <div className="session">
                 <div className="session-time">⏱ 18:00 – 19:30</div>
-                <div className="session-name">Kraft / Ausdauer</div>
+                <div className="session-name">Kraft / Ausdauer <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div>
                 <div className="session-info">ab 7 Jahre</div>
                 <div className="session-trainer">👤 Jamie</div>
               </div>
             </div>
             <div className="day-card">
               <div className="day-label">Dienstag</div>
-              <div className="session"><div className="session-time">⏱ 18:00 – 19:15</div><div className="session-name">Jugendtraining</div><div className="session-info">6 – 11 Jahre</div><div className="session-trainer">👤 Nico</div></div>
-              <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Erwachsenentraining</div><div className="session-info">ab 15 Jahre</div><div className="session-trainer">👤 Nico</div></div>
+              <div className="session"><div className="session-time">⏱ 18:00 – 19:15</div><div className="session-name">Jugendtraining <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">6 – 11 Jahre</div><div className="session-trainer">👤 Nico / Jamie</div><div className="session-assistant">Assistenz: Ricardo</div></div>
+              <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Erwachsenentraining <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">ab 15 Jahre</div><div className="session-trainer">👤 Nico</div></div>
               <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Jiu-Jitsu</div><div className="session-info">alle Altersgruppen</div><div className="session-trainer">👤 Dirk</div></div>
             </div>
             <div className="day-card">
               <div className="day-label">Donnerstag</div>
-              <div className="session"><div className="session-time">⏱ 16:30 – 17:45</div><div className="session-name">Kindertraining</div><div className="session-info">ab 4 Jahre</div><div className="session-trainer">👤 Tobi / Tia / Albert / Jule</div></div>
-              <div className="session"><div className="session-time">⏱ 17:45 – 19:15</div><div className="session-name">Leistungsgruppe</div><div className="session-info">ab Orange Gurt</div><div className="session-trainer">👤 Tobi / Tia</div></div>
-              <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Erwachsenentraining</div><div className="session-info">ab 15 Jahre</div><div className="session-trainer">👤 Tobi</div></div>
+              <div className="session"><div className="session-time">⏱ 16:30 – 17:45</div><div className="session-name">Kindertraining <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">ab 4 Jahre</div><div className="session-trainer">👤 Tobi / Tia</div><div className="session-assistant">Assistenz: Albert / Jule / Felix</div></div>
+              <div className="session"><div className="session-time">⏱ 17:45 – 19:15</div><div className="session-name">Jugendtraining <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">ab Orange Gurt</div><div className="session-trainer">👤 Tobi / Tia</div></div>
+              <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Erwachsenentraining <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">ab 15 Jahre</div><div className="session-trainer">👤 Tobi</div></div>
               <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Jiu-Jitsu</div><div className="session-info">alle Altersgruppen</div><div className="session-trainer">👤 Carsten / Frank</div></div>
             </div>
             <div className="day-card">
               <div className="day-label">Freitag</div>
-              <div className="session"><div className="session-time">⏱ 18:00 – 19:30</div><div className="session-name">Wettkampftraining</div><div className="session-info">ab Gelb Gurt</div><div className="session-trainer">👤 Tia / Tobi</div></div>
-              <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Kata / Spiel &amp; Spaß</div><div className="session-info">Wochenwechsel</div><div className="session-trainer">👤 Tia / Tobi</div></div>
+              <div className="session"><div className="session-time">⏱ 17:00 – 18:00</div><div className="session-name">Leistungsgruppe <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">ausgewählte Teilnehmer</div><div className="session-trainer">👤 Tia / Tobi</div></div>
+              <div className="session"><div className="session-time">⏱ 18:00 – 19:30</div><div className="session-name">Wettkampftraining <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">ab Gelb Gurt</div><div className="session-trainer">👤 Tia / Tobi</div></div>
+              <div className="session"><div className="session-time">⏱ 19:30 – 21:00</div><div className="session-name">Kata / Spiel &amp; Spaß <span style={{color:'var(--primary)',fontSize:'.75rem',fontWeight:600}}>Judo</span></div><div className="session-info">Wochenwechsel</div><div className="session-trainer">👤 Tia / Tobi / Jamie</div></div>
             </div>
           </div>
           <div style={{marginTop:'1.5rem'}}>

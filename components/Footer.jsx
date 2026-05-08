@@ -17,6 +17,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/judo">Judo</Link></li>
             <li><Link href="/jiujitsu">Jiu-Jitsu</Link></li>
+            <li><Link href="/trainingszeiten">Trainingszeiten</Link></li>
             <li><Link href="/trainer">Trainer</Link></li>
             <li><Link href="/galerie">Galerie</Link></li>
           </ul>

@@ -2,16 +2,17 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 const SESSIONS = [
-  { day: 1, h: 18, m: 0,  name: 'Kraft / Ausdauer',    info: 'ab 7 Jahre',          href: '/judo' },
-  { day: 2, h: 18, m: 0,  name: 'Jugendtraining',       info: '6–11 Jahre',          href: '/judo' },
-  { day: 2, h: 19, m: 30, name: 'Erwachsenentraining',  info: 'ab 15 Jahre',         href: '/judo' },
-  { day: 2, h: 19, m: 30, name: 'Jiu-Jitsu',            info: 'alle Altersgruppen',  href: '/jiujitsu' },
-  { day: 4, h: 16, m: 30, name: 'Kindertraining',        info: 'ab 4 Jahre',          href: '/judo' },
-  { day: 4, h: 17, m: 45, name: 'Leistungsgruppe',       info: 'ab Orange Gurt',      href: '/judo' },
-  { day: 4, h: 19, m: 30, name: 'Erwachsenentraining',  info: 'ab 15 Jahre',         href: '/judo' },
-  { day: 4, h: 19, m: 30, name: 'Jiu-Jitsu',            info: 'alle Altersgruppen',  href: '/jiujitsu' },
-  { day: 5, h: 18, m: 0,  name: 'Wettkampftraining',    info: 'ab Gelb Gurt',        href: '/judo' },
-  { day: 5, h: 19, m: 30, name: 'Kata / Spiel & Spaß', info: 'Wochenwechsel',       href: '/judo' },
+  { day: 1, h: 18, m: 0,  name: 'Kraft / Ausdauer',    info: 'ab 7 Jahre',             href: '/judo' },
+  { day: 2, h: 18, m: 0,  name: 'Jugendtraining',       info: '6–11 Jahre',             href: '/judo' },
+  { day: 2, h: 19, m: 30, name: 'Erwachsenentraining',  info: 'ab 15 Jahre',            href: '/judo' },
+  { day: 2, h: 19, m: 30, name: 'Jiu-Jitsu',            info: 'alle Altersgruppen',     href: '/jiujitsu' },
+  { day: 4, h: 16, m: 30, name: 'Kindertraining',        info: 'ab 4 Jahre',             href: '/judo' },
+  { day: 4, h: 17, m: 45, name: 'Jugendtraining',        info: 'ab Orange Gurt',         href: '/judo' },
+  { day: 4, h: 19, m: 30, name: 'Erwachsenentraining',  info: 'ab 15 Jahre',            href: '/judo' },
+  { day: 4, h: 19, m: 30, name: 'Jiu-Jitsu',            info: 'alle Altersgruppen',     href: '/jiujitsu' },
+  { day: 5, h: 17, m: 0,  name: 'Leistungsgruppe',      info: 'ausgewählte Teilnehmer', href: '/judo' },
+  { day: 5, h: 18, m: 0,  name: 'Wettkampftraining',    info: 'ab Gelb Gurt',           href: '/judo' },
+  { day: 5, h: 19, m: 30, name: 'Kata / Spiel & Spaß', info: 'Wochenwechsel',          href: '/judo' },
 ]
 
 const DAY_NAMES = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag']
