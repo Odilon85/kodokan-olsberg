@@ -71,14 +71,15 @@ nav {
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
-  background: url('../images/Hero-neu.PNG') 15% center / auto 110% no-repeat;
+  background: url('../images/Hero-Test.jpg') center center / cover no-repeat;
 }
 .hero-bg::after {
   content: ''; position: absolute; inset: 0;
   background:
-    linear-gradient(to right,  rgba(10,10,10,.2) 40%, rgba(10,10,10,1) 82%),
-    linear-gradient(to bottom, rgba(10,10,10,.7) 0%,  rgba(10,10,10,.45) 35%, rgba(10,10,10,.72) 68%, rgba(10,10,10,1) 100%),
-    linear-gradient(to bottom, rgba(10,10,10,1) 0%,   transparent 12%);
+    linear-gradient(to right, rgba(10,10,10,.97) 0%, rgba(10,10,10,.7) 25%, transparent 45%, transparent 55%, rgba(10,10,10,.7) 75%, rgba(10,10,10,.97) 100%),
+    linear-gradient(rgba(10,10,10,.6), rgba(10,10,10,.6)),
+    linear-gradient(to bottom, rgba(10,10,10,1) 0%, transparent 14%),
+    linear-gradient(to bottom, transparent 70%, rgba(10,10,10,1) 100%);
 }
 .hero::before { display: none; }
 .hero-inner { position: relative; z-index: 1; max-width: 760px; }
