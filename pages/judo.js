@@ -38,16 +38,20 @@ export default function Judo() {
       </section>
 
       {/* GRUPPENFOTO */}
-      <div className="photo-banner">
-        <img src={img('/images/Gruppenfoto.jpg')} alt="Die Judo-Mannschaft des Kodokan Olsberg" style={{objectPosition: 'center 20%'}} />
-        <div className="photo-banner-overlay">
-          <div className="photo-banner-text">
-            <div className="section-tag">Gemeinschaft</div>
-            <h2>Mehr als Sport –<br />ein Verein</h2>
-            <p>Ob Wettkampf oder Training, jung oder alt – beim Kodokan Olsberg zieht jeder am selben Strang.</p>
+      <section className="section">
+        <div className="container">
+          <div className="about-intro" style={{gridTemplateColumns:'1fr 1.3fr'}}>
+            <div>
+              <div className="section-tag">Gemeinschaft</div>
+              <h2 className="section-title">Judo verbindet –<br />auf und neben der Matte</h2>
+              <p style={{color:'var(--text-muted)',lineHeight:'1.7'}}>Ob Wettkampf oder Training, jung oder alt – beim Kodokan Olsberg zieht jeder am selben Strang.</p>
+            </div>
+            <div>
+              <img src={img('/images/Hero-Test.jpg')} alt="Die Judo-Mannschaft des Kodokan Olsberg" style={{maxHeight:'none', objectFit:'contain'}} />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* WARUM JUDO */}
       <section className="section">

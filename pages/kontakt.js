@@ -91,6 +91,13 @@ export default function Kontakt() {
                   </div>
                 </div>
                 <div className="contact-row">
+                  <div className="contact-ico">📞</div>
+                  <div>
+                    <strong>Telefon</strong>
+                    <a href="tel:+4915751753187">+49 157 5175 3187</a>
+                  </div>
+                </div>
+                <div className="contact-row">
                   <div className="contact-ico">🥋</div>
                   <div>
                     <strong>Probetraining</strong>
