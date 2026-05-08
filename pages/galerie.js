@@ -7,17 +7,17 @@ import 'yet-another-react-lightbox/styles.css'
 const SECTIONS = [
   {
     tag: 'Training', title: 'Trainingseindrücke',
-    images: ['Training-1.jpg','Training-2.jpg','Training-3.jpg','Training-4.jpg'],
+    images: ['Training-1.jpg','Training-2.jpg','Training-3.jpg','Training-4.jpg','Training-5.jpg','Training-6.jpg','Training-7.jpg','Training-8.jpg','Training-9.jpg','Training-10.jpg','Training-11.jpg'],
     alt: 'Training',
   },
   {
     tag: 'Wettkämpfe', title: 'Wettkampfergebnisse',
-    images: ['Erfolge-1.jpg','Erfolge-2.jpg','Erfolge-3.jpg','Wettkampf-1.jpg','Wettkampf-2.jpg','Wettkampf-3.jpg','Wettkampf-4.jpg','Wettkampf-5.jpg','Wettkampf-6.jpg','Wettkampf-7.jpg'],
+    images: ['Erfolge-1.jpg','Erfolge-2.jpg','Erfolge-3.jpg','Erfolge-4.jpg','Erfolge-5.jpg','Erfolge-6.jpg','Erfolge-7.jpg','Erfolge-8.jpg','Erfolge-9.jpg','Erfolge-10.jpg','Erfolge-11.jpg','Erfolge-12.jpg','Erfolge-13.jpg','Erfolge-14.jpg','Wettkampf-1.jpg','Wettkampf-2.jpg','Wettkampf-3.jpg','Wettkampf-4.jpg','Wettkampf-5.jpg','Wettkampf-6.jpg','Wettkampf-7.jpg','Wettkampf-8.jpg','Wettkampf-9.jpg','Wettkampf-10.jpg'],
     alt: 'Wettkampf',
   },
   {
     tag: 'Vereinsleben', title: 'Gemeinschaft & Events',
-    images: ['Freizeit-1.jpg','Freizeit-2.jpg','Freizeit-3.jpg','Freizeit-4.jpg','Freizeit-5.jpg'],
+    images: ['Freizeit-1.jpg','Freizeit-2.jpg','Freizeit-3.jpg','Freizeit-4.jpg','Freizeit-5.jpg','Freizeit-6.jpg','Freizeit-7.jpg','Freizeit-8.jpg','Freizeit-9.jpg','Freizeit-10.jpg','Freizeit-11.jpg','Freizeit-12.jpg','Freizeit-13.jpg','Freizeit-14.jpg','Freizeit-15.jpg'],
     alt: 'Vereinsleben',
   },
 ]
