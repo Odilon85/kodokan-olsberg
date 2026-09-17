@@ -9,7 +9,7 @@ export function middleware(request) {
 
   const { pathname, searchParams } = request.nextUrl
 
-  if (pathname === '/maintenance') {
+  if (pathname.startsWith('/maintenance')) {
     return NextResponse.next()
   }
 
