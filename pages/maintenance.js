@@ -33,10 +33,11 @@ export default function Maintenance() {
         }
 
         .logo {
+          display: block;
           width: 120px;
           height: 120px;
           object-fit: contain;
-          margin-bottom: 2rem;
+          margin: 0 auto 2rem;
           opacity: 0.9;
           filter: drop-shadow(0 4px 16px rgba(0,0,0,0.6));
         }
