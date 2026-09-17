@@ -12,7 +12,7 @@ function DanBadge({ dan }) {
   )
 }
 
-const BELT_COLORS = { braun: '#7B4F2E', gruen: '#2e7d32' }
+const BELT_COLORS = { braun: '#7B4F2E', gruen: '#2e7d32', blau: '#1565c0', 'orange-gruen': 'linear-gradient(90deg, #e65100 50%, #2e7d32 50%)' }
 
 function BeltBadge({ color, label }) {
   return (
@@ -97,7 +97,7 @@ export default function Trainer() {
               <div className="avatar">👤</div>
               <div className="team-name">Jule Dittrich</div>
               <div className="team-role">Assistenztrainerin Judo</div>
-              <BeltBadge color="gruen" label="Grün" />
+              <BeltBadge color="blau" label="Blau" />
               <div className="team-belt">Donnerstag: Kindertraining</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
             </div>
@@ -105,7 +105,7 @@ export default function Trainer() {
               <div className="avatar">👤</div>
               <div className="team-name">Ricardo Lakatos</div>
               <div className="team-role">Assistenztrainer Judo</div>
-              <BeltBadge color="gruen" label="Grün" />
+              <BeltBadge color="blau" label="Blau" />
               <div className="team-belt">Dienstag: Jugendtraining</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Jugendtraining dienstags.</p>
             </div>
@@ -113,9 +113,17 @@ export default function Trainer() {
               <div className="avatar">👤</div>
               <div className="team-name">Felix Stappert</div>
               <div className="team-role">Assistenztrainer Judo</div>
-              <BeltBadge color="gruen" label="Grün" />
+              <BeltBadge color="blau" label="Blau" />
               <div className="team-belt">Donnerstag: Kindertraining</div>
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
+            </div>
+            <div className="team-card">
+              <div className="avatar">👤</div>
+              <div className="team-name">Sebastian Zahm</div>
+              <div className="team-role">Assistenztrainer Judo</div>
+              <BeltBadge color="orange-gruen" label="Orange-Grün" />
+              <div className="team-belt">Donnerstag: Kinder &amp; Jugend</div>
+              <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kinder- und Jugendtraining donnerstags.</p>
             </div>
           </div>
 
