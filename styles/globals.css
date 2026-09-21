@@ -204,19 +204,18 @@ tr:hover td { background: rgba(255,255,255,.018); }
 .dan-badge { display: inline-flex; align-items: center; gap: .45rem; background: #111; border: 1px solid var(--border); border-radius: 4px; padding: .22rem .55rem; font-size: .72rem; font-weight: 700; color: var(--text-muted); letter-spacing: .5px; margin: .3rem 0; }
 .dan-pips { display: flex; gap: 3px; }
 .dan-pip { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); }
-.board-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.board-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 2rem; }
 .board-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; text-align: center; transition: all .2s; transform: translateZ(0); }
 .board-card:hover { border-color: var(--primary); transform: translateZ(0) translateY(-3px); box-shadow: var(--shadow); }
-.board-photo { position: relative; width: 100%; height: 180px; overflow: hidden; background: var(--bg-elevated); }
+.board-photo { position: relative; width: 100%; height: 240px; overflow: hidden; background: var(--bg-elevated); }
 .board-photo img { object-fit: cover; object-position: top center; transition: transform .4s; }
 .board-card:hover .board-photo img { transform: scale(1.04); }
 .board-photo svg { width: 48px; height: 48px; opacity: .15; }
 .board-card-body { padding: .9rem 1rem; }
 .board-card-name { font-size: .95rem; font-weight: 700; color: var(--text); margin-bottom: .2rem; }
 .board-card-role { font-size: .78rem; color: var(--text-muted); }
-@media (max-width: 900px) { .board-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 600px) { .board-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 400px) { .board-grid { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .board-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .board-grid { grid-template-columns: 1fr; } }
 
 /* ── NEWS ────────────────────────────────────────── */
 .news-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all .25s; }
