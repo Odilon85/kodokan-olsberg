@@ -110,7 +110,9 @@ export default function Trainer() {
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Jugendtraining dienstags.</p>
             </div>
             <div className="team-card">
-              <div className="avatar">👤</div>
+              <div className="avatar" style={{background:'none',width:'80px',height:'80px',borderRadius:'50%',overflow:'hidden'}}>
+                <img src={img('/images/trainer-felix.jpg')} alt="Felix Stappert" style={{width:'80px',height:'80px',objectFit:'cover'}} />
+              </div>
               <div className="team-name">Felix Stappert</div>
               <div className="team-role">Assistenztrainer Judo</div>
               <BeltBadge color="blau" label="Blau" />
@@ -118,7 +120,9 @@ export default function Trainer() {
               <p style={{color:'var(--text-muted)',fontSize:'.82rem',marginTop:'.75rem',lineHeight:'1.6'}}>Unterstützt das Kindertraining donnerstags.</p>
             </div>
             <div className="team-card">
-              <div className="avatar">👤</div>
+              <div className="avatar" style={{background:'none',width:'80px',height:'80px',borderRadius:'50%',overflow:'hidden'}}>
+                <img src={img('/images/trainer-sebastian.jpg')} alt="Sebastian Zahm" style={{width:'80px',height:'80px',objectFit:'cover'}} />
+              </div>
               <div className="team-name">Sebastian Zahm</div>
               <div className="team-role">Assistenztrainer Judo</div>
               <BeltBadge color="orange-gruen" label="Orange-Grün" />
