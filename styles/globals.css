@@ -191,10 +191,10 @@ tr:hover td { background: rgba(255,255,255,.018); }
 .badge-green { background: rgba(34,197,94,.12); color: #6ee7a4; border: 1px solid rgba(34,197,94,.3); }
 
 /* ── TEAM ────────────────────────────────────────── */
-.team-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; text-align: center; transition: all .25s; }
-.team-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: var(--shadow); }
+.team-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; text-align: center; transition: all .25s; transform: translateZ(0); }
+.team-card:hover { border-color: var(--primary); transform: translateZ(0) translateY(-4px); box-shadow: var(--shadow); }
 .team-photo { width: 100%; height: 220px; overflow: hidden; background: var(--bg-elevated); display: flex; align-items: center; justify-content: center; }
-.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .4s; }
+.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .4s; backface-visibility: hidden; }
 .team-card:hover .team-photo img { transform: scale(1.04); }
 .team-photo svg { width: 64px; height: 64px; opacity: .15; }
 .team-card-body { padding: 1.25rem; }
@@ -205,10 +205,10 @@ tr:hover td { background: rgba(255,255,255,.018); }
 .dan-pips { display: flex; gap: 3px; }
 .dan-pip { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); }
 .board-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
-.board-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; text-align: center; transition: all .2s; }
-.board-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: var(--shadow); }
+.board-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; text-align: center; transition: all .2s; transform: translateZ(0); }
+.board-card:hover { border-color: var(--primary); transform: translateZ(0) translateY(-3px); box-shadow: var(--shadow); }
 .board-photo { width: 100%; height: 180px; overflow: hidden; background: var(--bg-elevated); display: flex; align-items: center; justify-content: center; }
-.board-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .4s; }
+.board-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .4s; backface-visibility: hidden; }
 .board-card:hover .board-photo img { transform: scale(1.04); }
 .board-photo svg { width: 48px; height: 48px; opacity: .15; }
 .board-card-body { padding: .9rem 1rem; }
