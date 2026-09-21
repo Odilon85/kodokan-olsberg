@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import { img } from '../lib/img'
+import Image from 'next/image'
 
 function DanBadge({ dan }) {
   return (
@@ -35,7 +35,7 @@ function TeamCard({ photo, alt, name, role, badge, schedule, description }) {
     <div className="team-card">
       <div className="team-photo">
         {photo
-          ? <img src={img(photo)} alt={alt} />
+          ? <Image src={photo} alt={alt} fill sizes="(max-width: 860px) 100vw, 33vw" />
           : <PersonIcon />
         }
       </div>

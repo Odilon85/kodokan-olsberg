@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
-import { img } from '../lib/img'
+import Image from 'next/image'
 
 const PersonIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
@@ -14,7 +14,7 @@ function BoardCard({ photo, alt, name, role }) {
     <div className="board-card">
       <div className="board-photo">
         {photo
-          ? <img src={img(photo)} alt={alt} />
+          ? <Image src={photo} alt={alt} fill sizes="(max-width: 600px) 50vw, 25vw" />
           : <PersonIcon />
         }
       </div>

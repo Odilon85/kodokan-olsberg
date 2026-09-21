@@ -5,7 +5,7 @@ const nextConfig = {
   basePath: process.env.NEXT_BASE_PATH || '',
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: process.env.NEXT_EXPORT === 'true',
   },
 }
 
