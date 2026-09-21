@@ -2,6 +2,30 @@ import Layout from '../components/Layout'
 import Link from 'next/link'
 import { img } from '../lib/img'
 
+const PersonIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+    <circle cx="12" cy="8" r="4" />
+    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+  </svg>
+)
+
+function BoardCard({ photo, alt, name, role }) {
+  return (
+    <div className="board-card">
+      <div className="board-photo">
+        {photo
+          ? <img src={img(photo)} alt={alt} />
+          : <PersonIcon />
+        }
+      </div>
+      <div className="board-card-body">
+        <div className="board-card-name">{name}</div>
+        <div className="board-card-role">{role}</div>
+      </div>
+    </div>
+  )
+}
+
 export default function Vorstand() {
   return (
     <Layout title="Vorstand" description="Der Vorstand des Judovereins Kodokan Olsberg e.V.">
@@ -23,18 +47,9 @@ export default function Vorstand() {
           {/* GESCHÄFTSFÜHRENDER VORSTAND */}
           <div className="section-tag mt-2">Geschäftsführender Vorstand</div>
           <div className="board-grid" style={{marginTop:'1rem'}}>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/vorstand-peter.jpg')} alt="Peter den Ridder" /></div>
-              <div><div className="board-card-name">Peter den Ridder</div><div className="board-card-role">1. Vorsitzender</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-              <div><div className="board-card-name">Kati Dittrich</div><div className="board-card-role">Vorstand</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-              <div><div className="board-card-name">Sebastian Bültmann</div><div className="board-card-role">Vorstand</div></div>
-            </div>
+            <BoardCard photo="/images/vorstand-peter.jpg" alt="Peter den Ridder" name="Peter den Ridder" role="1. Vorsitzender" />
+            <BoardCard name="Kati Dittrich" role="Vorstand" />
+            <BoardCard name="Sebastian Bültmann" role="Vorstand" />
           </div>
 
           <div className="divider mt-2"></div>
@@ -42,38 +57,14 @@ export default function Vorstand() {
           {/* GESAMTVORSTAND */}
           <div className="section-tag mt-2">Gesamtvorstand</div>
           <div className="board-grid" style={{marginTop:'1rem'}}>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/vorstand-peter.jpg')} alt="Peter den Ridder" /></div>
-              <div><div className="board-card-name">Peter den Ridder</div><div className="board-card-role">1. Vorsitzender</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-              <div><div className="board-card-name">Kati Dittrich</div><div className="board-card-role">Vorstand</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-              <div><div className="board-card-name">Sebastian Bültmann</div><div className="board-card-role">Vorstand</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/trainer-tobias.jpg')} alt="Tobias Klappert" /></div>
-              <div><div className="board-card-name">Tobias Klappert</div><div className="board-card-role">Erweiterter Vorstand</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/trainer-nico.jpg')} alt="Nico Berkenkopf" /></div>
-              <div><div className="board-card-name">Nico Berkenkopf</div><div className="board-card-role">Erweiterter Vorstand</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/vorstand-sebastian.jpg')} alt="Sebastian Zahm" /></div>
-              <div><div className="board-card-name">Sebastian Zahm</div><div className="board-card-role">Erweiterter Vorstand</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/vorstand-tia.jpg')} alt="Tia den Ridder" /></div>
-              <div><div className="board-card-name">Tia den Ridder</div><div className="board-card-role">Jugendleitung</div></div>
-            </div>
-            <div className="board-card">
-              <div className="board-avatar"><img src={img('/images/vorstand-jacqueline.jpg')} alt="Jacqueline Stappert" /></div>
-              <div><div className="board-card-name">Jacqueline Stappert</div><div className="board-card-role">Erweiterter Vorstand · Presse</div></div>
-            </div>
+            <BoardCard photo="/images/vorstand-peter.jpg" alt="Peter den Ridder" name="Peter den Ridder" role="1. Vorsitzender" />
+            <BoardCard name="Kati Dittrich" role="Vorstand" />
+            <BoardCard name="Sebastian Bültmann" role="Vorstand" />
+            <BoardCard photo="/images/trainer-tobias.jpg" alt="Tobias Klappert" name="Tobias Klappert" role="Erweiterter Vorstand" />
+            <BoardCard photo="/images/trainer-nico.jpg" alt="Nico Berkenkopf" name="Nico Berkenkopf" role="Erweiterter Vorstand" />
+            <BoardCard photo="/images/vorstand-sebastian.jpg" alt="Sebastian Zahm" name="Sebastian Zahm" role="Erweiterter Vorstand" />
+            <BoardCard photo="/images/vorstand-tia.jpg" alt="Tia den Ridder" name="Tia den Ridder" role="Jugendleitung" />
+            <BoardCard photo="/images/vorstand-jacqueline.jpg" alt="Jacqueline Stappert" name="Jacqueline Stappert" role="Erweiterter Vorstand · Presse" />
           </div>
         </div>
       </section>
