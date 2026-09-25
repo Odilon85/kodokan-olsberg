@@ -48,7 +48,7 @@ export default function Vorstand() {
           <div className="section-tag mt-2">Geschäftsführender Vorstand</div>
           <div className="board-grid" style={{marginTop:'1rem'}}>
             <BoardCard photo="/images/vorstand-peter.jpg" alt="Peter den Ridder" name="Peter den Ridder" role="1. Vorsitzender" />
-            <BoardCard name="Kati Dittrich" role="Vorstand" />
+            <BoardCard photo="/images/vorstand-kati.jpg" alt="Kati Dittrich" name="Kati Dittrich" role="Vorstand" />
             <BoardCard name="Sebastian Bültmann" role="Vorstand" />
           </div>
 
@@ -58,10 +58,10 @@ export default function Vorstand() {
           <div className="section-tag mt-2">Gesamtvorstand</div>
           <div className="board-grid" style={{marginTop:'1rem'}}>
             <BoardCard photo="/images/vorstand-peter.jpg" alt="Peter den Ridder" name="Peter den Ridder" role="1. Vorsitzender" />
-            <BoardCard name="Kati Dittrich" role="Vorstand" />
+            <BoardCard photo="/images/vorstand-kati.jpg" alt="Kati Dittrich" name="Kati Dittrich" role="Vorstand" />
             <BoardCard name="Sebastian Bültmann" role="Vorstand" />
-            <BoardCard photo="/images/trainer-tobias.jpg" alt="Tobias Klappert" name="Tobias Klappert" role="Erweiterter Vorstand" />
-            <BoardCard photo="/images/trainer-nico.jpg" alt="Nico Berkenkopf" name="Nico Berkenkopf" role="Erweiterter Vorstand" />
+            <BoardCard photo="/images/vorstand-tobias.jpg" alt="Tobias Klappert" name="Tobias Klappert" role="Erweiterter Vorstand" />
+            <BoardCard photo="/images/vorstand-nico.jpg" alt="Nico Berkenkopf" name="Nico Berkenkopf" role="Erweiterter Vorstand" />
             <BoardCard photo="/images/vorstand-sebastian.jpg" alt="Sebastian Zahm" name="Sebastian Zahm" role="Erweiterter Vorstand" />
             <BoardCard photo="/images/vorstand-tia.jpg" alt="Tia den Ridder" name="Tia den Ridder" role="Jugendleitung" />
             <BoardCard photo="/images/vorstand-jacqueline.jpg" alt="Jacqueline Stappert" name="Jacqueline Stappert" role="Erweiterter Vorstand · Presse" />

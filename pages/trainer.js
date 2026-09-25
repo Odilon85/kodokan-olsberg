@@ -101,18 +101,21 @@ export default function Trainer() {
               description="Leitet das Kraft- und Ausdauertraining montags sowie das Jugendtraining dienstags."
             />
             <TeamCard
+              photo="/images/trainer-albert.jpg" alt="Albert Smajli"
               name="Albert Smajli" role="Assistenztrainer Judo"
               badge={<BeltBadge color="braun" label="Braun" />}
               schedule="Donnerstag: Kindertraining"
               description="Unterstützt das Kindertraining donnerstags."
             />
             <TeamCard
+              photo="/images/trainer-jule.jpg" alt="Jule Dittrich"
               name="Jule Dittrich" role="Assistenztrainerin Judo"
               badge={<BeltBadge color="blau" label="Blau" />}
               schedule="Donnerstag: Kindertraining"
               description="Unterstützt das Kindertraining donnerstags."
             />
             <TeamCard
+              photo="/images/trainer-ricardo.jpg" alt="Ricardo Lakatos"
               name="Ricardo Lakatos" role="Assistenztrainer Judo"
               badge={<BeltBadge color="blau" label="Blau" />}
               schedule="Dienstag: Jugendtraining"
