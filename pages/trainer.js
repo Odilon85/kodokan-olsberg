@@ -64,6 +64,14 @@ export default function Trainer() {
         </div>
       </div>
 
+      <div className="trainer-banner">
+        <Image src="/images/trainer-gruppe.jpg" alt="Haupttrainer Kodokan Olsberg" fill sizes="100vw" priority />
+        <div className="trainer-banner-overlay">
+          <div className="trainer-banner-names">Tia · Tobias · Jamie · Nico</div>
+          <div className="trainer-banner-label">Die Haupttrainer des Kodokan Olsberg</div>
+        </div>
+      </div>
+
       <section className="section">
         <div className="container">
           <p className="section-lead">Unser Trainerteam besteht aus lizenzierten Übungsleitern des Deutschen Judo-Bundes (DJB). Jeder Trainer bringt seine eigene Erfahrung und Spezialisierung mit – gemeinsam sorgen wir für ein professionelles und abwechslungsreiches Training.</p>

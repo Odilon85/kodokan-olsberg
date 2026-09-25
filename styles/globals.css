@@ -190,6 +190,14 @@ tr:hover td { background: rgba(255,255,255,.018); }
 .badge-blue { background: rgba(59,130,246,.12); color: #7db5f9; border: 1px solid rgba(59,130,246,.3); }
 .badge-green { background: rgba(34,197,94,.12); color: #6ee7a4; border: 1px solid rgba(34,197,94,.3); }
 
+/* ── TRAINER BANNER ─────────────────────────────── */
+.trainer-banner { position: relative; width: 100%; height: 420px; overflow: hidden; background: var(--bg-elevated); }
+.trainer-banner img { object-fit: cover; object-position: center 20%; }
+.trainer-banner-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.1) 50%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 2rem 2.5rem; }
+.trainer-banner-names { font-size: 1.4rem; font-weight: 900; color: #fff; letter-spacing: .04em; margin-bottom: .3rem; }
+.trainer-banner-label { font-size: .82rem; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: 2px; }
+@media (max-width: 600px) { .trainer-banner { height: 260px; } .trainer-banner-names { font-size: 1.1rem; } }
+
 /* ── TEAM ────────────────────────────────────────── */
 .team-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; text-align: center; transition: all .25s; transform: translateZ(0); }
 .team-card:hover { border-color: var(--primary); transform: translateZ(0) translateY(-4px); box-shadow: var(--shadow); }
