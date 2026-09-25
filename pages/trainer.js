@@ -64,12 +64,12 @@ export default function Trainer() {
         </div>
       </div>
 
-      <div className="trainer-banner">
-        <Image src="/images/trainer-gruppe.jpg" alt="Haupttrainer Kodokan Olsberg" fill sizes="100vw" priority />
-        <div className="trainer-banner-overlay">
-          <div className="trainer-banner-names">Tia · Tobias · Jamie · Nico</div>
-          <div className="trainer-banner-label">Die Haupttrainer des Kodokan Olsberg</div>
-        </div>
+      <div className="trainer-group-photo">
+        <Image src="/images/trainer-gruppe.jpg" alt="Haupttrainer Kodokan Olsberg" width={1200} height={800} sizes="(max-width: 900px) 100vw, 900px" priority style={{width:'100%',height:'auto',display:'block'}} />
+      </div>
+      <div className="trainer-group-caption">
+        <div className="trainer-group-caption-names">Tia · Tobias · Jamie · Nico</div>
+        <div className="trainer-group-caption-label">Die Haupttrainer des Kodokan Olsberg</div>
       </div>
 
       <section className="section">

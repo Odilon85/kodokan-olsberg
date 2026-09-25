@@ -49,7 +49,7 @@ export default function Vorstand() {
           <div className="board-grid" style={{marginTop:'1rem'}}>
             <BoardCard photo="/images/vorstand-peter.jpg" alt="Peter den Ridder" name="Peter den Ridder" role="1. Vorsitzender" />
             <BoardCard photo="/images/vorstand-kati.jpg" alt="Kati Dittrich" name="Kati Dittrich" role="Vorstand" />
-            <BoardCard name="Sebastian Bültmann" role="Vorstand" />
+            <BoardCard photo="/images/vorstand-sebastian-b.jpg" alt="Sebastian Bültmann" name="Sebastian Bültmann" role="Vorstand" />
           </div>
 
           <div className="divider mt-2"></div>
@@ -59,7 +59,7 @@ export default function Vorstand() {
           <div className="board-grid" style={{marginTop:'1rem'}}>
             <BoardCard photo="/images/vorstand-peter.jpg" alt="Peter den Ridder" name="Peter den Ridder" role="1. Vorsitzender" />
             <BoardCard photo="/images/vorstand-kati.jpg" alt="Kati Dittrich" name="Kati Dittrich" role="Vorstand" />
-            <BoardCard name="Sebastian Bültmann" role="Vorstand" />
+            <BoardCard photo="/images/vorstand-sebastian-b.jpg" alt="Sebastian Bültmann" name="Sebastian Bültmann" role="Vorstand" />
             <BoardCard photo="/images/vorstand-tobias.jpg" alt="Tobias Klappert" name="Tobias Klappert" role="Erweiterter Vorstand" />
             <BoardCard photo="/images/vorstand-nico.jpg" alt="Nico Berkenkopf" name="Nico Berkenkopf" role="Erweiterter Vorstand" />
             <BoardCard photo="/images/vorstand-sebastian.jpg" alt="Sebastian Zahm" name="Sebastian Zahm" role="Erweiterter Vorstand" />
