@@ -68,7 +68,7 @@ export default function Trainer() {
         <Image src="/images/trainer-gruppe.jpg" alt="Haupttrainer Kodokan Olsberg" width={1200} height={800} sizes="(max-width: 900px) 100vw, 900px" priority style={{width:'100%',height:'auto',display:'block'}} />
       </div>
       <div className="trainer-group-caption">
-        <div className="trainer-group-caption-names">Tia · Tobias · Jamie · Nico</div>
+        <div className="trainer-group-caption-names">Jamie · Tia · Nico · Tobias</div>
         <div className="trainer-group-caption-label">Die Haupttrainer des Kodokan Olsberg</div>
       </div>
 
