@@ -28,6 +28,7 @@ export default function Footer() {
             <li><Link href="/vorstand">Vorstand</Link></li>
             <li><Link href="/aufnahmeantrag">Mitglied werden</Link></li>
             <li><Link href="/satzung">Satzung</Link></li>
+            <li><a href="https://team.jako.com/de-de/team/kodokan_olsberg/" target="_blank" rel="noopener noreferrer">Merch-Shop ↗</a></li>
           </ul>
         </div>
         <div className="footer-col">

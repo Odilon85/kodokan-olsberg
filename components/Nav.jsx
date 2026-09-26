@@ -43,6 +43,11 @@ export default function Nav() {
             </Link>
           </li>
         ))}
+        <li className="nav-cta">
+          <a href="https://team.jako.com/de-de/team/kodokan_olsberg/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+            Shop
+          </a>
+        </li>
       </ul>
     </nav>
   )
