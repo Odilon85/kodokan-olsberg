@@ -74,7 +74,7 @@ export default function Trainer() {
 
       <section className="section">
         <div className="container">
-          <p className="section-lead">Unser Trainerteam besteht aus lizenzierten Übungsleitern des Deutschen Judo-Bundes (DJB). Jeder Trainer bringt seine eigene Erfahrung und Spezialisierung mit – gemeinsam sorgen wir für ein professionelles und abwechslungsreiches Training.</p>
+          <p className="section-lead" style={{maxWidth:'none',textAlign:'center'}}>Unser Trainerteam besteht aus lizenzierten Übungsleitern des Deutschen Judo-Bundes (DJB). Jeder Trainer bringt seine eigene Erfahrung und Spezialisierung mit – gemeinsam sorgen wir für ein professionelles und abwechslungsreiches Training.</p>
 
           {/* JUDO TRAINER */}
           <div className="section-tag mt-2">Judo</div>
